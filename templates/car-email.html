@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .header {
+            background: #243c54;
+            padding: 10px;
+            text-align: center;
+       }
+        .container {
+            width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #d1d2d3;
+            border-radius: 5px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #076ba7;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+        .footer {
+            background: #f5f6f7;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://traveloment.com/wp-content/uploads/2023/08/trav_logo-removebg-preview-768x213.png" alt="Traveloment" width="150">
+    </div>
+    <div class="container">
+        <div class="title">Booking Acknowledgement</div>
+        <div class="content">
+            <p>Dear Customer,</p>
+            <p>Your booking acknowledgement for Traveloment Booking: {{bookingNo}} has been received. This email does not confirm successful ticketing. Confirmation of your booking will be sent in a separate email.</p>
+            <table cellspacing="0" cellpadding="0" width="650" border="0" align="center" style="font-family:Arial;font-size:14px;color:#666666">
+                <tbody>
+                    <tr>
+                        <td height="20">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:5px">
+                            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                <tr>
+                                    <td width="60%" style="color:#076ba7;font-size:24px;font-family:Arial">
+                                        Car Details
+                                    </td>
+                                    <td width="30%" style="color:#666666">
+                                        <strong>Status:</strong>
+                                        <a href="https://traveloment.com/">
+                                            Check now
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td style="border:1px solid #d4d4d4;border-bottom:1px solid #9f9f9f">
+    <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+        <tr>
+            <td style="background-color:#ffffff;padding:15px">
+                <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+                    <tr>
+                        <td style="color:#056ba8;font-size:20px;font-weight:bold;padding-right:25px" valign="top" width="26%" height="50">
+                            <div>Special</div>
+                        </td>
+                        <td style="font-size:16px;padding-right:25px" valign="top" width="44%">
+                            Location:<br>
+                            <strong>{{drop_of_location}}</strong>
+                        </td>
+                        <td style="font-size:16px" valign="top" width="30%">
+                            Days:<br>
+                            <strong>{{no_of_days}}</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+<td style="" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" width="" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+                                                       
+                                                       
+                                                       
+                                                        <tr>
+                                                            <td style="padding-top: 30px" align="center">
+                                                                <img style="border:none; width:80%" src="https://i.pinimg.com/originals/b6/6e/14/b66e14f44dd38a6fac2aff3207345058.gif" >
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                        <td valign="top" style="padding:12px 25px 0 0">
+                            <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+                                <tr>
+                                    <td valign="top" style="padding-bottom:10px">
+                                        Car Pick-Up
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-bottom:15px">
+                                        <strong style="font-size:20px" class="notranslate">
+                                        {{pick_up_day}}, {{pick_up_date}} - {{pick_up_timing}}
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-bottom:20px;line-height:17px">
+                                        {{pick_up_address}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-bottom:10px">
+                                        Car Drop-Off
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-bottom:15px">
+                                        <strong style="font-size:20px" class="notranslate">
+                                        {{drop_of_day}}, {{drop_of_date}} - {{drop_of_timing}}
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="line-height:17px">
+                                    {{drop_of_address}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="top">
+                            <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+                                <tr>
+                                    <td style="background-color:#f6f6f6;padding:15px;line-height:16px">
+                                        Car Confirmation: <br>
+                                        <strong>{{confirmation_no}}</strong>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <span>Total Charge: : <strong><span>{{billing_amount}}</span></strong></span>
+                                        <br>
+                                        <br>
+                                        <a href={{link}} style="display: inline-block; width: 100%; padding: 0.5rem; background-color: #243c54; color: #f5dd42; text-align: center; text-decoration: none;">
+                    Pay Now
+                </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="8">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="padding:15px;background-color:#ffffff">
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px;color:#666666">
+                                            <tr>
+                                                <td width="26%" style="padding-right:25px" valign="top" height="30">
+                                                    Type
+                                                </td>
+                                                <td width="44%" valign="top">
+                                                    Driver
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-right:25px;line-height:17px">
+                                                    <span style="font-size:16px;font-weight:bold">
+                                                        {{car_details}}
+                                                    </span>
+                                                </td>
+                                                <td style="font-size:16px;font-weight:bold;text-transform:capitalize" valign="top">
+                                                    {{driver_name}}
+                                                </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Your Details:</p>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Arial;font-size:12px">
+                <tbody>
+                    <tr>
+                        <td valign="top" style="padding-bottom:10px">Name:</td>
+                        <td valign="top" style="padding-bottom:10px">{{name}}</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="padding-bottom:10px">Email:</td>
+                        <td valign="top" style="padding-bottom:10px">{{email}}</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="padding-bottom:10px">Phone:</td>
+                        <td valign="top" style="padding-bottom:10px">{{phone}}</td>
+                    </tr>
+                    <!-- Add more rows for billing details as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>For any changes with your flight, date, route or names, call us at +1(800) 986-6901 or click <a href="https://traveloment.com/" style="color:#005083;font-size:12px;text-decoration:none;font-weight:bold" rel="noreferrer noreferrer noreferrer" target="_blank">here to chat with us</a>.</p>
+        <p>Copyright © 2024 Traveloment. All rights reserved.</p>
+    </div>
+</body>
+</html>
