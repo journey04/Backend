@@ -92,7 +92,7 @@ function sendCarEmail(subject, templateName, data, to) {
       if (error) {
         console.log(error);
       } else {
-        console.log('Email sent:', response);
+        console.log('Email sent:');
       }
     });
   }
